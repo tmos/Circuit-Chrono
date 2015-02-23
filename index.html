@@ -1,0 +1,52 @@
+<html>
+<!doctype html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Circuit Timer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css" media="all">
+	<link rel="icon" href="icons/favicon.ico">
+</head>
+
+<body>
+	<header class="Header">
+		<h1>Circuit chrono</h1>
+	</header>
+	<main>
+	
+		<!-- Homepage -->
+		<div class="Page" id="Page_Choice">
+			<label for="inp_time">Time for one lap :</h2>
+			<input id="inp_time" type="number" min="0" step="1" value="42">
+			<button class="Btn" id="btn_compute">Go !</button>
+		</div>
+		
+		<!-- Chrono page -->
+		<div class="Page" id="Page_Chrono">
+			<label for="currentTime">Elapsed time for the lap : </label>
+			<span id="currentTime">
+				0
+			</span>
+			<br>
+			<progress class="Progress" id="progress" value="0" max="0"></progress>
+			<br>
+			<label for="rounds">Laps : </label>
+			<span id="rounds">
+				0
+			</span>
+			<br>
+			<button class="Btn" id="btn_pauseResume">Pause</button>
+			<button class="Btn" id="btn_end">End</button>
+		</div>
+		
+		<footer class="Footer">
+			Application made by <a target="_blank" href="http://tomcanac.com">Tom Canac</a>. Icon from the <a target="_blank" href="http://mokaproject.com/">Moka project</a>.
+		</footer>
+	</main>
+
+
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

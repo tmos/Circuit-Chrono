@@ -1,8 +1,6 @@
 /**
  * TODO
  *
- * Pause
- * Resume
  * Quand on veut changer la valeur de l'input pendant que le chrono roule, le focus se barre
  *
  */
@@ -34,7 +32,7 @@
 	 * Functions
 	 **********/
 	function beep() {
-		var snd = new Audio("r2.wav");
+		var snd = new Audio("sounds/r2.wav");
 		snd.play();
 	}
 
